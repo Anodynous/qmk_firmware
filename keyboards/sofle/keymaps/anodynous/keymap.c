@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
  * |      |      | Ins  | Pscr | Menu |      |                    |      | PWrd |  Up  | NWrd | DLine|  `   |
  * |------+------+------+------+------+------|                    |------+------+------+------+------+------|
- * |      |      | Save | Snip |Search| Caps |-------.    ,-------| PGup | Left | Down | Rigth| Bspc |  '   |
+ * |      |      | Save | Snip |Search|      |-------.    ,-------| PGup | Left | Down | Rigth| Bspc |  '   |
  * |------+------+------+------+------+------|  MUTE |    |  PLAY |------+------+------+------+------+------|
  * |      | Undo |  Cut | Copy | Paste|      |-------|    |-------| PGdn | LStr |  Del | LEnd |      |      |
  * `-----------------------------------------/       /     \      \-----------------------------------------'
@@ -102,7 +102,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_RAISE] = LAYOUT( \
   _______, _______, _______, _______,  _______,   _______,                           _______,  _______,  _______, _______,  _______,  _______, \
   _______, _______, KC_INS,  KC_PSCR,  KC_APP,    _______,                           XXXXXXX, KC_PRVWD,  KC_UP,   KC_NXTWD, KC_DLINE, KC_PLUS, \
-  _______,  _______, KC_SAVE, KC_SNIP,  KC_SEARCH, KC_CAPS,                           KC_PGUP,  KC_LEFT,  KC_DOWN, KC_RGHT,  KC_BSPC,   KC_NUHS, \
+  _______,  _______, KC_SAVE, KC_SNIP,  KC_SEARCH, _______,                           KC_PGUP,  KC_LEFT,  KC_DOWN, KC_RGHT,  KC_BSPC,   KC_NUHS, \
   _______, KC_UNDO, KC_CUT,  KC_COPY,  KC_PASTE,  _______,  _______,       _______,  KC_PGDN, KC_LSTRT,  KC_DEL, KC_LEND,  XXXXXXX,  _______, \
                        _______, _______, _______, KC_BSPC, _______,        _______, _______, _______, _______, _______ \
 ),
@@ -123,7 +123,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_ADJUST] = LAYOUT( \
   RESET,   XXXXXXX, XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,                        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
   CG_TOGG, XXXXXXX, XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX,                        XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
-  XXXXXXX, KC_STENO, KC_NUMPAD, KC_MOUSEK, KC_QWERTY, XXXXXXX,                        XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
+  XXXXXXX, KC_STENO, KC_NUMPAD, KC_MOUSEK, KC_QWERTY, KC_CAPS,                        XXXXXXX, KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX, XXXXXXX, \
   XXXXXXX, XXXXXXX, XXXXXXX,   XXXXXXX,   XXXXXXX,   XXXXXXX, _______,      _______, XXXXXXX, KC_MPRV, KC_MPLY, KC_MNXT, XXXXXXX, XXXXXXX, \
                    _______, _______, _______, _______, _______,              _______, _______, _______, _______, _______ \
   ),
